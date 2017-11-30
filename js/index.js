@@ -55,8 +55,10 @@ window.addEventListener('load', function() {
 				
 			if (iSize < 12) {		//谷歌浏览器字体小于12px时的处理方式
 				word.style.transform = "scale("+ iSize / 12 + ")";
+			} else {
+				word.style.transform = 'none';
 			}
-			
+
 			word.style.fontSize = iSize + 'px';
 			drager.dataset.sub = parseInt(iSize) + 'px';	//设置上标提示栏
 		}
